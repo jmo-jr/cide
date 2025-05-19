@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CIDE - Capacitação, Inserção e Desenvolvimento</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+
+			<header class="main-header mobile">
+				<div class="content">
+					<nav class="navbar">
+						<div class="logo">
+							<img src="assets/logo-cide.png" alt="CIDE">
+						</div>
+						<ul class="nav">
+							<li><a href="#vagas">Vagas</a></li>
+							<li><a href="#processos-seletivos">Processos seletivos</a></li>
+							<li><a href="#transparencia">Transparência</a></li>
+							<li><a href="https://ciderh.org.br/documentos/Proc_Sel_Andamento.html" target="_blank">Editais / TRF3 / JFSP</a></li>
+							<li><a href="#parcerias">Parcerias</a></li>
+						</ul>
+						<button class="btn login" onclick="window.open('https://cideestagio.conectrh.com.br/', '_blank')">Login</button>
+					</nav>
+					<div class="social">
+						<a class="btn-link" href="https://www.facebook.com/cide" target="_blank" class="facebook"><img src="assets/icon-face.png" ></a>
+						<a class="btn-link" href="https://www.instagram.com/cide" target="_blank" class="intagram"><img src="assets/icon-instagram.png" ></a>
+					</div>
+				</div>
+			</header>
+
+			<header class="main-header desktop">
+				<div class="container">
+					<div class="header_main-content">
+						<nav class="navbar">
+							<div class="logo">
+								<img src="assets/logo-cide.png" alt="CIDE Logo">
+							</div>
+							<ul class="nav">
+								<li><a href="vagas">Vagas</a></li>
+								<li><a href="#o-que-fazemos">Processos seletivos</a></li>
+								<li><a href="#como-ajudar">Transparência</a></li>
+								<li><a href="#contato">Editais</a></li>
+								<li><a href="#contato">Parcerias</a></li>
+							</ul>
+							<button class="btn login">Login</button>
+						</nav>
+						<div class="social">
+							<a class="btn-link" href="https://www.facebook.com/cide" target="_blank" class="facebook"><img src="assets/icon-face.png" ></a>
+							<a class="btn-link" href="https://www.instagram.com/cide" target="_blank" class="intagram"><img src="assets/icon-instagram.png" ></a>
+						</div>
+					</div>
+					<div class="overlay-img"></div>
+				</div>
+			</header>
+
+			<main>
+
+				<section id="quem-somos" class="container card has-title has-image">
+					<h2>Quem somos</h2>
+					<article>
+						<p>O <span class="orange-text">CIDE - Capacitação, Inserção e Desenvolvimento</span> é uma organização sem fins lucrativos que, desde 1998, atua na formação, qualificação e inclusão de estudantes e jovens no mercado de trabalho. Promovemos estágios, programas de aprendizagem e ações educativas voltadas ao desenvolvimento social e profissional. Reconhecido como de utilidade pública, o CIDE também está habilitado a prestar serviços e parcerias com órgãos públicos e privados em projetos de relevância social.</p>
+						<div class="img-container">
+							<img src="assets/quemsomos.png" alt="Quem somos">
+						</div>
+					</article>
+				</section>
+
+				<section id="vagas" class="container">
+					<h2 class="text-center">Vagas</h2>
+
+					<!-- foreach -->
+					<div class="card simple-card">
+						<h3>Vaga Estágio</h3>
+						<article class="card-content">
+							<p class="description">Remuneração: R$</p>
+							<p class="local">Salvador - BA</p>
+						</article>
+						<button class="btn card-btn">Ver Oportunidade</button>
+					</div>
+					<!-- ./ -->
+
+					<button class="btn more-btn" onclick="window.open('https://cideestagio.conectrh.com.br/p/Vagas/63894819713318914', '_blank')">Ver Mais</button>
+				</section>
+
+				<section id="processos-seletivos" class="container">
+					<h2 class="text-center">Processos Seletivos</h2>
+
+					<!-- foreach -->
+					<div class="card simple-card">
+						<h3>Processos Seletivos</h3>
+						<article class="card-content">
+							<p class="description">Salário: R$</p>
+							<p class="local">Brasília - DF</p>
+						</article>
+						<button class="btn card-btn">Ver Oportunidade</button>
+					</div>
+					<!-- ./ -->
+				</section>
+
+				<section id="transparencia" class="container documents">
+					<h2 class="text-center">Documentação</h2>
+
+					<div class="flex-grid">
+						<button class="btn-document">
+							<img src="assets/icon-certidoes.png" alt="Certidões">
+						</button>
+						<button class="btn-document">
+							<img src="assets/icon-certificados.png" alt="Certificados">
+						</button>
+						<button class="btn-document">
+							<img src="assets/icon-estatutos.png" alt="Estatutos">
+						</button>
+						<button class="btn-document">
+							<img src="assets/icon-regulamentos.png" alt="Regulamentos">
+						</button>
+						<button class="btn-document">
+							<img src="assets/icon-contratos.png" alt="Contratos">
+						</button>
+					</div>
+				</section>
+
+				<section id="parcerias" class="container">
+					<div class="box-header">
+						<h2><small>Parceria com a</small><br> Prefeitura de Coruripe/AL</h2>
+						<div class="d-flex">
+							<div class="parceria-img"></div>
+							<div class="subtitle">Programa de Eficientização da Gestão Patrimonial</div>
+						</div>
+					</div>
+
+					<article class="text-parcerias">
+						<p><strong>O CIDE Capacitação, Inserção e Desenvolvimento</strong> atua com a <strong>Prefeitura Minicipal de Coruripe/AL</strong> na execução do Programa de Eficientização da Gestão Patrimonial, <strong class="orange-text">com foco em serviços de zeladoria, conservação urbana e apoio à gestão dos bens públicos</strong>.</p>
+						<p>A iniciativa abrange atividades como ma-nutenção de prédios municipais, limpeza de espaços públicos, apoio logistico e organi-zação patrimonial, contribuindo para uma gestão mais eficiente, sustentável e voltada ao bem-estar da população.</p>
+					</article>
+
+					<div class="parcerias">
+						<h3>Parcerias</h3>
+						<div class="d-flex">
+							<a class="img-container" href="https://www.gdf.br/" target="_blank">
+								<img src="assets/logo-GDF.png" alt="GDF">
+							</a>
+							<a class="img-container" href="https://www.sudesb.ba.br/" target="_blank">
+								<img src="assets/logo-sudesb.png" alt="Sudesb">
+							</a>
+							<a class="img-container" href="https://www.coruripe.br/" target="_blank">
+								<img src="assets/logo-coruripe.png" alt="Coruripe">
+							</a>
+						</div>
+					</div>
+				</section>
+
+			</main>
+
+			<footer>
+				<div class="footer-logo">
+					<img src="assets/logo-cide.png" alt="CIDE Logo">
+				</div>
+				<address class="address">
+					Av. Tancredo Neves, 1186 - Caminho das Árvores - Salvador - BA<br>contato@cideestagio.com.br
+				</address>
+				<p>&copy; 2025 CIDE. Todos os direitos reservados.</p>
+				<div class="social">
+						<a class="btn-link" href="https://www.facebook.com/cide" target="_blank" class="facebook"><img src="assets/icon-face.png" ></a>
+						<a class="btn-link" href="https://www.instagram.com/cide" target="_blank" class="intagram"><img src="assets/icon-instagram.png" ></a>
+					</div>
+			</footer>
+
+		</div>
+		
+		<script src="" async defer></script>
+	</body>
+</html>
