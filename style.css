@@ -200,7 +200,7 @@ main {
 		}
 
 		& p {
-			text-align: justify;
+			/* text-align: justify; */
 			line-height: 1.4;
 
 			& strong {
@@ -428,7 +428,7 @@ footer {
 				display: block;
 				bottom: 0;
 				right: 5%;
-				width: 40%;
+				width: 42%;
 				height: 95%;
 				background: url('assets/hero-image_dt.png') no-repeat;
 				background-size: cover;
