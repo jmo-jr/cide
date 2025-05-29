@@ -200,7 +200,7 @@ main {
 		}
 
 		& p {
-			/* text-align: justify; */
+			font-size: 18px;
 			line-height: 1.4;
 
 			& strong {
@@ -285,12 +285,12 @@ main {
 		}
 
 		& .subtitle {
-			width: 70px;
+			width: 72px;
 			margin-top: 24px;
-			margin-left: 74%;
+			margin-left: 70%;
 			margin-bottom: 20px;
-			font-size: 12px;
-			line-height: 1.2;
+			font-size: 14px;
+			line-height: 1.3;
 		}
 	}
 
