@@ -177,6 +177,12 @@ main {
 			text-transform: uppercase;
 			letter-spacing: 1px;
 		}
+
+		& .flex-container {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
 	
 		&.card {
 			position: relative;
@@ -485,8 +491,8 @@ footer {
 	}
 
 	.flex-container {
-		display: flex;
-		gap: 16px;
+		flex-direction: row !important;
+		gap: 16px !important;
 
 		& .simple-card {
 			width: 33.333%;
