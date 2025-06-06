@@ -71,29 +71,30 @@ button {
 .main-header {
 	position: relative;
 
-	&.mobile {
+	&.responsive {
 		display: flex;
-		background: #93197e url(assets/header-bg.png) no-repeat center center;
-		background-size: contain;
-		aspect-ratio: 1 / .84;
+		background: #93197e url('assets/hero-bg_dt.png') no-repeat;
+		background-size: cover;
+		aspect-ratio: 1 / .85;
 
 		& .content {
-			padding: 26px 18px 0;
+			box-sizing: border-box;
 			position: absolute;
 			display: flex;
 			flex-direction: column;
-			height: calc(100% - 28px);
+			height: 100%;
+			padding: 26px 18px 0;
 
 			& .navbar {
 				position: relative;
 				display: flex;
 				flex-direction: column;
-				gap: 8px;
 				flex: 1;
+				border: solid 2px var(--orange);
 
 				& .logo {
 					width: 50%;
-					padding: 1.5% 8px;
+					padding: 8px 16px 4px;
 				}
 
 				& .nav {
@@ -101,8 +102,9 @@ button {
 					flex-direction: column;
 					flex: 1;
 					justify-content: space-around;
-					margin: 0 0 8px;
-					padding: 0 16px;
+					margin: 0;
+					padding: 16px 24px 32px;
+					background-color: rgba(0, 0, 0, 0.4);
 					list-style: none;
 
 					& a {
@@ -119,6 +121,8 @@ button {
 				}
 
 				& .login {
+					position: absolute;
+					bottom: -16px;
 					width: 110px;
 					margin-left: 16px;
 					background-color: var(--orange);
@@ -129,7 +133,7 @@ button {
 			}
 
 			& .social {
-        padding: 8px 36px 0;
+        padding: 24px 32px 6px;
         width: fit-content;
 
 				& .btn-link {
@@ -138,13 +142,18 @@ button {
 					padding: 6px;
     		}
     	}
+
+			& .overlay-img {
+				position: absolute;
+				display: block;
+				bottom: -1px;
+				right: -40px;
+				width: 70%;
+				height: 100%;
+				background: url('assets/hero-image_dt.png') no-repeat center bottom;
+				background-size: contain;
+			}
 		}
-	}
-
-	&.desktop { display: none; }
-
-	.overlay-img {
-		display: none;
 	}
 }
 
@@ -366,29 +375,27 @@ footer {
  ===== TABLET + DESKTOP =====
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
 	.container {
-		width: 100%;
-		max-width: 1300px;
+		width: 90%;
+		max-width: 1440px;
 	}
 
 	.main-header {
-
-		&.desktop { display: none; }
 		
-		&.mobile { 
+		&.responsive { 
 			position: relative;
 			display: block;
 			height: 90vh;
-			background: url('assets/hero-bg_dt.png') no-repeat;
+			background: #93197e url('assets/hero-bg_dt.png') no-repeat;
 			background-size: cover;
 			aspect-ratio: unset;
 
 			& .content {
-				position: static;
-				width: 100%;
-				max-width: 1300px;
+				position: relative;
+				width: 90%;
+				max-width: 1440px;
 				height: 100%;
 				margin-right: auto;
 				margin-left: auto;
@@ -396,16 +403,11 @@ footer {
 			}
 
 			& .navbar {
-				display: flex;
 				justify-content: space-between;
-				gap: 24px;
-				margin: 50px 0 0;
+				margin: 50px 0 16px;
 
 				& .nav {
-					gap: 24px;
-					padding: 0 40px !important;
-					background-color: unset;
-					flex: 0 !important;
+					padding: 40px 160px 80px !important;
 
 					& a {
 						font-size: 24px !important;
@@ -414,17 +416,17 @@ footer {
 
 				& .logo {
 					width: 300px !important;
-					padding: 24px !important;
+					padding: 24px 150px !important;
 				}
 
 				& .login {
-					margin-left: 60px !important;
+					margin-left: 160px !important;
 					font-size: 18px !important;
 				}
 			}
 
 			& .social {
-				padding: 16px 60px !important;
+				padding: 16px 160px !important;
 
 				& .btn-link {
 					width: 36px !important;
@@ -432,14 +434,10 @@ footer {
 			}
 
 			& .overlay-img {
-				position: absolute;
-				display: block;
-				bottom: 0;
-				right: 5%;
-				width: 42%;
-				height: 95%;
-				background: url('assets/hero-image_dt.png') no-repeat;
-				background-size: cover;
+				bottom: -1px !important;
+				right: 10% !important;
+				width: 600px !important;
+				height: 100% !important;
 			}
 		}
 	}
@@ -562,5 +560,31 @@ footer {
 
 	.footer-logo {
 			width: 200px !important;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.main-header {
+		height: 700px !important;
+
+		& .nav {
+			padding: 40px 160px 80px !important;
+		}
+
+		& .logo {
+			padding: 24px 150px !important;
+		}
+
+		& .login {
+			margin-left: 160px !important;
+		}
+
+		& .social {
+			padding: 16px 160px !important;
+		}
+
+		& .overlay-img {
+			width: 43% !important;
+		}
 	}
 }
